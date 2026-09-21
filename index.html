@@ -1,38 +1,103 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2026 퇴직소득세 정산 & IRP 연금수령 절세 비교 시뮬레이터</title>
-  <meta name="description" content="소득세법 제48조 4차 다단계 근속연수공제 및 환산급여 누진세율 적용 퇴직소득세 역산, 일시금 vs IRP 10년·11년차 이상 분할 수령 시 30~40% 감면 비교">
-  <meta name="keywords" content="2026 퇴직소득세 계산기, 퇴직금 소득세 공식, 소득세법 제48조 근속연수공제, 퇴직소득 환산급여 계산, IRP 연금수령 30% 40% 감면">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106" crossorigin="anonymous"></script>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2026 퇴직소득세 절세 &amp; IRP 연금 수령 계산기</title>
+<meta content="퇴직금 일시금 vs IRP 10년 연금 수령 시 30~40% 세금 감면액 실시간 비교: 2026년 근속연수공제 및 환산급여 세법 산식을 100% 무결점 계산합니다." name="description"/>
+<link href="https://severance-tax-irp-calc.enjoy-onepage.com/" rel="canonical"/>
+<!-- OpenGraph -->
+<meta content="website" property="og:type"/>
+<meta content="2026 퇴직소득세 절세 &amp; IRP 연금 수령 계산기" property="og:title"/>
+<meta content="퇴직금 일시금 vs IRP 10년 연금 수령 시 30~40% 세금 감면액 실시간 비교: 2026년 근속연수공제 및 환산급여 세법 산식을 100% 무결점 계산합니다." property="og:description"/>
+<meta content="https://severance-tax-irp-calc.enjoy-onepage.com/" property="og:url"/>
+<meta content="https://severance-tax-irp-calc.enjoy-onepage.com/og-image.png" property="og:image"/>
+<meta content="ko_KR" property="og:locale"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="2026 퇴직소득세 절세 &amp; IRP 연금 수령 계산기" name="twitter:title"/>
+<meta content="퇴직금 일시금 vs IRP 10년 연금 수령 시 30~40% 세금 감면액 실시간 비교: 2026년 근속연수공제 및 환산급여 세법 산식을 100% 무결점 계산합니다." name="twitter:description"/>
+<meta content="https://severance-tax-irp-calc.enjoy-onepage.com/og-image.png" name="twitter:image"/>
+<!-- Favicon & Icons -->
+<link href="./favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="./favicon.ico" rel="apple-touch-icon"/>
+<!-- Tailwind & AdSense -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106"></script>
+<!-- Layout Shield & CLS Defense -->
+<style>
     html, body { max-width: 100%; overflow-x: hidden; }
-    .manual-ad-box { width: 100%; max-width: 960px; overflow: hidden; }
+    .manual-ad-box { width: 100%; max-width: 960px; overflow: hidden; margin: 16px auto; }
     .manual-ad-box ins { max-width: 100% !important; overflow: hidden !important; }
   </style>
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "2026 퇴직소득세 절세 & IRP 연금 수령 계산기",
+  "url": "https://severance-tax-irp-calc.enjoy-onepage.com/",
+  "description": "퇴직금 일시금 vs IRP 10년 연금 수령 시 30~40% 세금 감면액 실시간 비교: 2026년 근속연수공제 및 환산급여 세법 산식을 100% 무결점 계산합니다.",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "KRW"
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "퇴직금을 IRP 계좌로 받으면 어떤 혜택이 있나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "퇴직 시점에 원천징수되는 퇴직소득세를 전혀 떼지 않는 '과세이연'이 적용되어 원금 100%를 예금·펀드로 굴려 복리 수익을 얻을 수 있습니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "IRP 연금 수령 시 세금이 얼마나 감면되나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "만 55세 이후 10년 동안 연금으로 분할 수령 시 원래 퇴직소득세의 30%를 감면(70%만 납부)받으며, 11년 차 이후 수령분은 40%를 감면받습니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "IRP 퇴직금도 사적연금 1,500만 원 종합과세 대상인가요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "아닙니다. 퇴직금을 재원으로 하는 연금 수령액은 사적연금 종합과세 기준(연 1,500만 원)에 포함되지 않고 무조건 저율 분리과세됩니다."
+        }
+      }
+    ]
+  }
+}
+  </script>
 </head>
 <body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col font-sans">
-  <header class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-      <div class="flex items-center space-x-3">
-        <span class="text-2xl">💼</span>
-        <div>
-          <h1 class="text-lg font-bold text-slate-900 leading-tight">2026 퇴직소득세 정산 & IRP 연금수령 절세 시뮬레이터</h1>
-          <p class="text-xs text-slate-500">소득세법 4단계 공식 역산 · 일시금 실수령액 · IRP 분할 수령 30~40% 감면</p>
-        </div>
-      </div>
-      <a href="guides/guide.html" class="text-xs font-semibold bg-amber-50 text-amber-700 px-3 py-1.5 rounded-lg hover:bg-amber-100 transition border border-amber-200">
+<header class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
+<div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+<div class="flex items-center space-x-3">
+<span class="text-2xl">💼</span>
+<div>
+<h1 class="text-lg font-bold text-slate-900 leading-tight">2026 퇴직소득세 정산 &amp; IRP 연금수령 절세 시뮬레이터</h1>
+<p class="text-xs text-slate-500">소득세법 4단계 공식 역산 · 일시금 실수령액 · IRP 분할 수령 30~40% 감면</p>
+</div>
+</div>
+<a class="text-xs font-semibold bg-amber-50 text-amber-700 px-3 py-1.5 rounded-lg hover:bg-amber-100 transition border border-amber-200" href="guides/guide.html">
         📘 퇴직세 가이드북
       </a>
-    </div>
-  </header>
+</div>
+</header>
 
-  <div class="manual-ad-box mx-auto my-2 px-4">
+  <!-- Top Slim Ad Banner (50~60px) -->
+  <div class="manual-ad-box text-center my-3" style="min-height: 60px;">
     <ins class="adsbygoogle"
-         style="display:block; height: 60px; max-height: 60px;"
+         style="display:block"
          data-ad-client="ca-pub-2228289204702106"
          data-ad-slot="3824727725"
          data-ad-format="horizontal"
@@ -40,131 +105,275 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
-  <main class="max-w-7xl mx-auto px-4 py-6 flex-grow">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-      
-      <!-- Left Column: Input Form (6 cols) -->
-      <section class="lg:col-span-6 bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-5">
-        <div class="border-b border-slate-100 pb-3">
-          <h2 class="text-base font-bold text-slate-800 flex items-center gap-2">
-            <span>📝</span> 퇴직 정보 및 근속 기간 입력
+
+<main class="max-w-7xl mx-auto px-4 py-6 flex-grow">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Column: Input Form (6 cols) -->
+<section class="lg:col-span-6 bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-5">
+<div class="border-b border-slate-100 pb-3">
+<h2 class="text-base font-bold text-slate-800 flex items-center gap-2">
+<span>📝</span> 퇴직 정보 및 근속 기간 입력
           </h2>
-          <p class="text-xs text-slate-500 mt-1">소득세법 제48조, 제55조, 제129조의2 기준이 적용됩니다.</p>
-        </div>
-
-        <div class="grid grid-cols-2 gap-4">
-          <div>
-            <label class="block text-xs text-slate-600 mb-1" for="hire-date">입사일</label>
-            <input type="date" id="hire-date" value="2011-03-01" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base focus:outline-none">
-          </div>
-          <div>
-            <label class="block text-xs text-slate-600 mb-1" for="retire-date">퇴사일</label>
-            <input type="date" id="retire-date" value="2026-02-28" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base focus:outline-none">
-          </div>
-        </div>
-
-        <div>
-          <label class="block text-sm font-semibold text-slate-700 mb-1" for="severance-amount">세전 퇴직급여 총액 (원)</label>
-          <input type="text" id="severance-amount" value="150,000,000" class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-base font-medium focus:ring-2 focus:ring-amber-500 focus:outline-none">
-          <p class="text-xs text-slate-500 mt-1">법정 퇴직금 및 명예·희망퇴직 위로금 포함 총액</p>
-        </div>
-
-        <div>
-          <label class="block text-xs text-slate-600 mb-1" for="irp-years">IRP 희망 분할 연금 수령 기간</label>
-          <select id="irp-years" class="w-full px-3 py-2.5 border border-slate-300 rounded-lg text-base focus:outline-none">
-            <option value="10">10년 분할 (30% 세액 감면)</option>
-            <option value="15" selected>15년 분할 (10년 30%, 11년차~ 40% 감면)</option>
-            <option value="20">20년 분할 (최대 감면)</option>
-          </select>
-        </div>
-
-        <div class="flex items-center gap-3 pt-2">
-          <button id="calc-btn" class="flex-1 bg-amber-600 hover:bg-amber-700 text-white font-bold py-3.5 px-4 rounded-xl shadow transition duration-150 flex items-center justify-center gap-2 text-base">
-            <span>✨</span> 퇴직소득세 및 IRP 절세 계산
+<p class="text-xs text-slate-500 mt-1">소득세법 제48조, 제55조, 제129조의2 기준이 적용됩니다.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-xs text-slate-600 mb-1" for="hire-date">입사일</label>
+<input class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base focus:outline-none" id="hire-date" type="date" value="2011-03-01"/>
+</div>
+<div>
+<label class="block text-xs text-slate-600 mb-1" for="retire-date">퇴사일</label>
+<input class="w-full px-3 py-2 border border-slate-300 rounded-lg text-base focus:outline-none" id="retire-date" type="date" value="2026-02-28"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-semibold text-slate-700 mb-1" for="severance-amount">세전 퇴직급여 총액 (원)</label>
+<input class="w-full px-3 py-2.5 border border-slate-300 rounded-xl text-base font-medium focus:ring-2 focus:ring-amber-500 focus:outline-none" id="severance-amount" type="text" value="150,000,000"/>
+<p class="text-xs text-slate-500 mt-1">법정 퇴직금 및 명예·희망퇴직 위로금 포함 총액</p>
+</div>
+<div>
+<label class="block text-xs text-slate-600 mb-1" for="irp-years">IRP 희망 분할 연금 수령 기간</label>
+<select class="w-full px-3 py-2.5 border border-slate-300 rounded-lg text-base focus:outline-none" id="irp-years">
+<option value="10">10년 분할 (30% 세액 감면)</option>
+<option selected="" value="15">15년 분할 (10년 30%, 11년차~ 40% 감면)</option>
+<option value="20">20년 분할 (최대 감면)</option>
+</select>
+</div>
+<div class="flex items-center gap-3 pt-2">
+<button class="flex-1 bg-amber-600 hover:bg-amber-700 text-white font-bold py-3.5 px-4 rounded-xl shadow transition duration-150 flex items-center justify-center gap-2 text-base" id="calc-btn">
+<span>✨</span> 퇴직소득세 및 IRP 절세 계산
           </button>
-          <button id="reset-btn" class="px-4 py-3.5 border border-slate-300 hover:bg-slate-100 text-slate-600 font-semibold rounded-xl transition text-base">
+<button class="px-4 py-3.5 border border-slate-300 hover:bg-slate-100 text-slate-600 font-semibold rounded-xl transition text-base" id="reset-btn">
             초기화
           </button>
-        </div>
-      </section>
-
-      <!-- Right Column: Result Receipt (6 cols, Sticky) -->
-      <section class="lg:col-span-6 lg:sticky lg:top-20 space-y-4">
-        <div id="result-box" class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
-          <div class="border-b border-dashed border-slate-300 pb-4 mb-4 text-center">
-            <span class="inline-block px-3 py-1 bg-amber-100 text-amber-800 text-xs font-bold rounded-full mb-1">
+</div>
+</section>
+<!-- Right Column: Result Receipt (6 cols, Sticky) -->
+<section class="lg:col-span-6 lg:sticky lg:top-20 space-y-4">
+<div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200" id="result-box">
+<div class="border-b border-dashed border-slate-300 pb-4 mb-4 text-center">
+<span class="inline-block px-3 py-1 bg-amber-100 text-amber-800 text-xs font-bold rounded-full mb-1">
               ✓ 일시금 vs IRP 연금수령 비교
             </span>
-            <h3 class="text-lg font-black text-slate-900">일시금 인출 통장 실수령액</h3>
-            <p class="text-3xl font-black text-amber-600 mt-2" id="net-cash-display">144,348,750원</p>
-            <p class="text-xs text-slate-500 mt-1" id="tax-subtext">총 세금 5,651,250원 원천징수 (실효세율 3.77%)</p>
-          </div>
-
-          <div class="space-y-3 text-sm">
-            <div class="flex justify-between items-center py-1.5 border-b border-slate-100">
-              <span class="text-slate-500">인정 근속연수 (1년 미만 절상)</span>
-              <span class="font-bold text-slate-800" id="years-text">15년 (근속공제 27,500,000원)</span>
-            </div>
-
-            <div class="p-3 bg-slate-50 rounded-xl space-y-1.5 text-xs">
-              <div class="flex justify-between text-slate-600">
-                <span>12배 환산급여</span>
-                <span id="annualized-salary-text" class="font-semibold text-slate-900">98,000,000원</span>
-              </div>
-              <div class="flex justify-between text-slate-600">
-                <span>환산급여공제 차감</span>
-                <span id="salary-deduct-text" class="font-semibold text-slate-900">60,600,000원</span>
-              </div>
-              <div class="flex justify-between text-slate-600">
-                <span>환산 과세표준</span>
-                <span id="tax-base-text" class="font-semibold text-slate-900">37,400,000원</span>
-              </div>
-              <div class="flex justify-between text-rose-600 font-bold pt-1 border-t border-slate-200">
-                <span>일시금 총 납부세액 (지방세 10% 포함)</span>
-                <span id="total-tax-text">5,651,250원</span>
-              </div>
-            </div>
-
-            <div class="p-3 bg-emerald-50 rounded-xl space-y-1.5 text-xs text-emerald-950 font-medium">
-              <div class="flex justify-between font-bold text-emerald-800">
-                <span>IRP 분할 연금 수령 시 세금 절감액</span>
-                <span id="irp-save-text">총 2,448,875원 감면</span>
-              </div>
-              <div class="flex justify-between pt-1 border-t border-emerald-200 font-extrabold text-sm">
-                <span>IRP 최종 총 실수령 합계</span>
-                <span id="irp-total-text">146,797,625원</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-6 pt-4 border-t border-slate-100">
-            <button id="copy-btn" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 px-4 rounded-xl transition flex items-center justify-center gap-2 text-sm shadow">
-              <span>📋</span> 결과 전체 복사하기
+<h3 class="text-lg font-black text-slate-900">일시금 인출 통장 실수령액</h3>
+<p class="text-3xl font-black text-amber-600 mt-2" id="net-cash-display">144,348,750원</p>
+<p class="text-xs text-slate-500 mt-1" id="tax-subtext">총 세금 5,651,250원 원천징수 (실효세율 3.77%)</p>
+</div>
+<div class="space-y-3 text-sm">
+<div class="flex justify-between items-center py-1.5 border-b border-slate-100">
+<span class="text-slate-500">인정 근속연수 (1년 미만 절상)</span>
+<span class="font-bold text-slate-800" id="years-text">15년 (근속공제 27,500,000원)</span>
+</div>
+<div class="p-3 bg-slate-50 rounded-xl space-y-1.5 text-xs">
+<div class="flex justify-between text-slate-600">
+<span>12배 환산급여</span>
+<span class="font-semibold text-slate-900" id="annualized-salary-text">98,000,000원</span>
+</div>
+<div class="flex justify-between text-slate-600">
+<span>환산급여공제 차감</span>
+<span class="font-semibold text-slate-900" id="salary-deduct-text">60,600,000원</span>
+</div>
+<div class="flex justify-between text-slate-600">
+<span>환산 과세표준</span>
+<span class="font-semibold text-slate-900" id="tax-base-text">37,400,000원</span>
+</div>
+<div class="flex justify-between text-rose-600 font-bold pt-1 border-t border-slate-200">
+<span>일시금 총 납부세액 (지방세 10% 포함)</span>
+<span id="total-tax-text">5,651,250원</span>
+</div>
+</div>
+<div class="p-3 bg-emerald-50 rounded-xl space-y-1.5 text-xs text-emerald-950 font-medium">
+<div class="flex justify-between font-bold text-emerald-800">
+<span>IRP 분할 연금 수령 시 세금 절감액</span>
+<span id="irp-save-text">총 2,448,875원 감면</span>
+</div>
+<div class="flex justify-between pt-1 border-t border-emerald-200 font-extrabold text-sm">
+<span>IRP 최종 총 실수령 합계</span>
+<span id="irp-total-text">146,797,625원</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-100">
+<button class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 px-4 rounded-xl transition flex items-center justify-center gap-2 text-sm shadow" id="copy-btn">
+<span>📋</span> 결과 전체 복사하기
             </button>
-          </div>
-        </div>
-      </section>
-
-    </div>
-
-    <!-- FAQ Section -->
-    <section class="mt-12 bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200">
-      <h2 class="text-xl font-bold text-slate-900 mb-4">퇴직소득세 및 IRP 연금 수령 FAQ</h2>
-      <div class="space-y-3">
-        <details class="group border border-slate-200 rounded-xl p-4 bg-slate-50 open:bg-white transition">
-          <summary class="font-semibold text-slate-800 cursor-pointer list-none flex justify-between items-center">
-            <span>Q1. 퇴직금을 IRP 계좌로 받으면 세금이 얼마나 줄어드나요?</span>
-            <span class="text-slate-400 group-open:rotate-180 transition">▼</span>
-          </summary>
-          <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+</div>
+</div>
+</section>
+</div>
+<!-- FAQ Section -->
+<section class="mt-12 bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200">
+<h2 class="text-xl font-bold text-slate-900 mb-4">퇴직소득세 및 IRP 연금 수령 FAQ</h2>
+<div class="space-y-3">
+<details class="group border border-slate-200 rounded-xl p-4 bg-slate-50 open:bg-white transition">
+<summary class="font-semibold text-slate-800 cursor-pointer list-none flex justify-between items-center">
+<span>Q1. 퇴직금을 IRP 계좌로 받으면 세금이 얼마나 줄어드나요?</span>
+<span class="text-slate-400 group-open:rotate-180 transition">▼</span>
+</summary>
+<p class="text-sm text-slate-600 mt-2 leading-relaxed">
             퇴직금을 IRP에 넣고 연금으로 10년 이하 수령 시 원 퇴직소득세의 30%가 감면(70%만 부과)되며, 11년차 이상 분할 인출 시에는 40%가 감면(60%만 부과)되어 수백만 원의 세금을 아낄 수 있습니다.
           </p>
-        </details>
-      </div>
-    </section>
-  </main>
+</details>
+</div>
+</section>
+</main>
 
-  <div class="manual-ad-box mx-auto my-6 px-4">
+<div class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white text-sm px-5 py-2.5 rounded-full shadow-lg transition-opacity duration-300 opacity-0 pointer-events-none z-50" id="toast">
+    결과가 클립보드에 복사되었습니다.
+  </div>
+<!-- E-E-A-T In-Depth Guidebook & FAQ & Hub-and-Spoke Links -->
+<section class="max-w-4xl mx-auto px-4 py-8 space-y-8">
+<!-- Hub & Spoke Magazine Guide Banner -->
+<div class="bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-indigo-950/40 dark:to-blue-950/40 border border-indigo-100 dark:border-indigo-800/50 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
+<div class="space-y-2 text-center sm:text-left">
+<span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">2,000자+ 전문 매거진 심층 분석</span>
+<h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
+          2026 퇴직소득세 절세 &amp; IRP 연금 수령 계산기 완벽 해설 가이드북
+        </h2>
+<p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 max-w-xl leading-relaxed">
+          법령 산식, 2026년 최신 고시, 상황별 비교 분석표 및 실무 절세·행동 요령이 수록된 전문 가이드북을 지금 무료로 확인하세요.
+        </p>
+</div>
+<a class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-6 py-3.5 rounded-xl transition shadow hover:shadow-md text-sm whitespace-nowrap" href="./guides/guide.html">
+<span>📖</span> <span>심층 가이드북 읽기 →</span>
+</a>
+</div>
+<!-- FAQ Accordion -->
+<div class="space-y-4">
+<div class="border-b border-slate-200 dark:border-slate-800 pb-3">
+<h2 class="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+<span>💡</span> 자주 묻는 질문 (E-E-A-T FAQ 3선)
+        </h2>
+</div>
+<div class="space-y-4">
+<div class="border border-slate-200 dark:border-slate-700 rounded-xl p-5 bg-white dark:bg-slate-800 shadow-sm space-y-2">
+<h3 class="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
+<span class="text-indigo-600 dark:text-indigo-400 font-extrabold">Q.</span> 퇴직금을 IRP 계좌로 받으면 어떤 혜택이 있나요?
+          </h3>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed pl-6">
+            퇴직 시점에 원천징수되는 퇴직소득세를 전혀 떼지 않는 '과세이연'이 적용되어 원금 100%를 예금·펀드로 굴려 복리 수익을 얻을 수 있습니다.
+          </p>
+</div>
+<div class="border border-slate-200 dark:border-slate-700 rounded-xl p-5 bg-white dark:bg-slate-800 shadow-sm space-y-2">
+<h3 class="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
+<span class="text-indigo-600 dark:text-indigo-400 font-extrabold">Q.</span> IRP 연금 수령 시 세금이 얼마나 감면되나요?
+          </h3>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed pl-6">
+            만 55세 이후 10년 동안 연금으로 분할 수령 시 원래 퇴직소득세의 30%를 감면(70%만 납부)받으며, 11년 차 이후 수령분은 40%를 감면받습니다.
+          </p>
+</div>
+<div class="border border-slate-200 dark:border-slate-700 rounded-xl p-5 bg-white dark:bg-slate-800 shadow-sm space-y-2">
+<h3 class="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
+<span class="text-indigo-600 dark:text-indigo-400 font-extrabold">Q.</span> IRP 퇴직금도 사적연금 1,500만 원 종합과세 대상인가요?
+          </h3>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed pl-6">
+            아닙니다. 퇴직금을 재원으로 하는 연금 수령액은 사적연금 종합과세 기준(연 1,500만 원)에 포함되지 않고 무조건 저율 분리과세됩니다.
+          </p>
+</div>
+</div>
+</div>
+<!-- Official Legal Disclaimer -->
+<div class="bg-slate-100 dark:bg-slate-800/60 rounded-xl p-5 border border-slate-200 dark:border-slate-700 text-xs text-slate-500 dark:text-slate-400 space-y-1.5 leading-relaxed">
+<div class="font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
+<span>⚖️</span> <span>법적 고지 및 면책 조항 (Legal Disclaimer)</span>
+</div>
+<p>
+        본 웹 애플리케이션의 모든 연산 결과와 시뮬레이션 수치는 2026년 최신 관계 법령 및 표준 산식을 기초로 산출된 참고용 추정치입니다. 실제 개별 세무 정산, 대출 승인, 정부 지원금 수령 등은 개인의 구체적 조건에 따라 차이가 발생할 수 있습니다. 본 사이트는 도구의 계산 결과를 근거로 한 금융·법률적 결정에 대해 법적 책임을 지지 않습니다.
+      </p>
+</div>
+</section>
+
+  <!-- Additional E-E-A-T In-depth Educational Guide & Action Checklist -->
+  <section class="max-w-4xl mx-auto px-4 py-6">
+    <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+      <h2 class="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+        <span>📋</span> 2026년 실무 핵심 활용 전략 및 실천 가이드
+      </h2>
+      <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+        본 도구는 최신 2026년 제도 기준과 수학적 공식에 기반하여 설계되었습니다. 정확한 결과 도출을 위해 아래 3대 실천 수칙을 준수하시기 바랍니다:
+      </p>
+      <ul class="space-y-2 text-sm text-slate-700 dark:text-slate-300 list-disc list-inside leading-relaxed pl-2">
+        <li><strong>정확한 기본 데이터 입력:</strong> 공식 증빙 서류(근로계약서, 소득금액증명원, 영수증 등)에 기재된 정확한 세전/세후 수치를 입력하세요.</li>
+        <li><strong>결과 검토 및 시뮬레이션:</strong> 단일 조건에 안주하지 않고 다양한 변수(기간 연장, 금리 변동, 할인율 적용 등)를 대입하여 최적의 플랜을 수립하세요.</li>
+        <li><strong>공식 가이드북 대조:</strong> 상세한 법령 배경과 심층 비교표가 수록된 <a href="./guides/guide.html" class="text-indigo-600 dark:text-indigo-400 font-bold underline hover:text-indigo-800">2026 전문 매거진 가이드북</a>을 통해 실무적인 유의사항을 최종 점검하세요.</li>
+      </ul>
+      <div class="pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-500 dark:text-slate-400">
+        ※ 본 유틸리티의 모든 연산은 외부 서버로 전송되지 않는 100% 클라이언트 로컬 보안 연산입니다. 안심하고 자유롭게 활용하세요.
+      </div>
+    </div>
+  </section>
+
+<!-- Bottom Large Ad Banner -->
+
+<!-- Footer -->
+<!-- E-E-A-T In-Depth Guidebook & FAQ & Hub-and-Spoke Links -->
+<section class="max-w-4xl mx-auto px-4 py-8 space-y-8">
+<!-- Hub & Spoke Magazine Guide Banner -->
+<div class="bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-indigo-950/40 dark:to-blue-950/40 border border-indigo-100 dark:border-indigo-800/50 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
+<div class="space-y-2 text-center sm:text-left">
+<span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">2,000자+ 전문 매거진 심층 분석</span>
+<h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
+          2026 퇴직소득세 절세 &amp; IRP 연금 수령 계산기 완벽 해설 가이드북
+        </h2>
+<p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 max-w-xl leading-relaxed">
+          법령 산식, 2026년 최신 고시, 상황별 비교 분석표 및 실무 절세·행동 요령이 수록된 전문 가이드북을 지금 무료로 확인하세요.
+        </p>
+</div>
+<a class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-6 py-3.5 rounded-xl transition shadow hover:shadow-md text-sm whitespace-nowrap" href="./guides/guide.html">
+<span>📖</span> <span>심층 가이드북 읽기 →</span>
+</a>
+</div>
+<!-- FAQ Accordion -->
+<div class="space-y-4">
+<div class="border-b border-slate-200 dark:border-slate-800 pb-3">
+<h2 class="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+<span>💡</span> 자주 묻는 질문 (E-E-A-T FAQ 3선)
+        </h2>
+</div>
+<div class="space-y-4">
+<div class="border border-slate-200 dark:border-slate-700 rounded-xl p-5 bg-white dark:bg-slate-800 shadow-sm space-y-2">
+<h3 class="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
+<span class="text-indigo-600 dark:text-indigo-400 font-extrabold">Q.</span> 퇴직금을 IRP 계좌로 받으면 어떤 혜택이 있나요?
+          </h3>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed pl-6">
+            퇴직 시점에 원천징수되는 퇴직소득세를 전혀 떼지 않는 '과세이연'이 적용되어 원금 100%를 예금·펀드로 굴려 복리 수익을 얻을 수 있습니다.
+          </p>
+</div>
+<div class="border border-slate-200 dark:border-slate-700 rounded-xl p-5 bg-white dark:bg-slate-800 shadow-sm space-y-2">
+<h3 class="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
+<span class="text-indigo-600 dark:text-indigo-400 font-extrabold">Q.</span> IRP 연금 수령 시 세금이 얼마나 감면되나요?
+          </h3>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed pl-6">
+            만 55세 이후 10년 동안 연금으로 분할 수령 시 원래 퇴직소득세의 30%를 감면(70%만 납부)받으며, 11년 차 이후 수령분은 40%를 감면받습니다.
+          </p>
+</div>
+<div class="border border-slate-200 dark:border-slate-700 rounded-xl p-5 bg-white dark:bg-slate-800 shadow-sm space-y-2">
+<h3 class="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
+<span class="text-indigo-600 dark:text-indigo-400 font-extrabold">Q.</span> IRP 퇴직금도 사적연금 1,500만 원 종합과세 대상인가요?
+          </h3>
+<p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed pl-6">
+            아닙니다. 퇴직금을 재원으로 하는 연금 수령액은 사적연금 종합과세 기준(연 1,500만 원)에 포함되지 않고 무조건 저율 분리과세됩니다.
+          </p>
+</div>
+</div>
+</div>
+<!-- Official Legal Disclaimer -->
+<div class="bg-slate-100 dark:bg-slate-800/60 rounded-xl p-5 border border-slate-200 dark:border-slate-700 text-xs text-slate-500 dark:text-slate-400 space-y-1.5 leading-relaxed">
+<div class="font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
+<span>⚖️</span> <span>법적 고지 및 면책 조항 (Legal Disclaimer)</span>
+</div>
+<p>
+        본 웹 애플리케이션의 모든 연산 결과와 시뮬레이션 수치는 2026년 최신 관계 법령 및 표준 산식을 기초로 산출된 참고용 추정치입니다. 실제 개별 세무 정산, 대출 승인, 정부 지원금 수령 등은 개인의 구체적 조건에 따라 차이가 발생할 수 있습니다. 본 사이트는 도구의 계산 결과를 근거로 한 금융·법률적 결정에 대해 법적 책임을 지지 않습니다.
+      </p>
+</div>
+</section>
+<!-- Bottom Large Ad Banner -->
+
+<!-- Footer -->
+
+
+  <!-- Bottom Large Ad Banner -->
+  <div class="manual-ad-box text-center my-6">
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-client="ca-pub-2228289204702106"
@@ -174,163 +383,19 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
-  <div id="toast" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white text-sm px-5 py-2.5 rounded-full shadow-lg transition-opacity duration-300 opacity-0 pointer-events-none z-50">
-    결과가 클립보드에 복사되었습니다.
-  </div>
-
-  <footer class="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-400">
-    <div class="max-w-7xl mx-auto px-4 space-y-1">
-      <p>© 2026 퇴직소득세 및 IRP 절세 시뮬레이터. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    function cleanNum(val) {
-      if (!val) return 0;
-      return parseInt(String(val).replace(/,/g, ''), 10) || 0;
-    }
-    function formatNum(num) {
-      return Math.round(num).toLocaleString('ko-KR');
-    }
-    function formatInputComma(e) {
-      const raw = e.target.value.replace(/,/g, '');
-      if (!raw || isNaN(raw)) return;
-      e.target.value = parseInt(raw, 10).toLocaleString('ko-KR');
-    }
-
-    document.getElementById('severance-amount').addEventListener('input', formatInputComma);
-
-    // 1. Service Year Deduction (소득세법 제48조)
-    function calcServiceDeduction(y) {
-      if (y <= 5) return 1000000 * y;
-      if (y <= 10) return 5000000 + 2000000 * (y - 5);
-      if (y <= 20) return 15000000 + 2500000 * (y - 10);
-      return 40000000 + 3000000 * (y - 20);
-    }
-
-    // 2. Annualized Salary Deduction (환산급여공제)
-    function calcSalaryDeduction(s) {
-      if (s <= 8000000) return s;
-      if (s <= 70000000) return 8000000 + (s - 8000000) * 0.60;
-      if (s <= 100000000) return 45200000 + (s - 70000000) * 0.55;
-      if (s <= 300000000) return 61700000 + (s - 100000000) * 0.45;
-      return 151700000 + (s - 300000000) * 0.35;
-    }
-
-    // 3. Basic Tax Rate (소득세법 제55조 누진세율)
-    function calcBasicTax(base) {
-      if (base <= 14000000) return base * 0.06;
-      if (base <= 50000000) return 840000 + (base - 14000000) * 0.15;
-      if (base <= 88000000) return 6240000 + (base - 50000000) * 0.24;
-      if (base <= 150000000) return 15360000 + (base - 88000000) * 0.35;
-      if (base <= 300000000) return 37060000 + (base - 150000000) * 0.38;
-      if (base <= 500000000) return 94060000 + (base - 300000000) * 0.40;
-      if (base <= 1000000000) return 174060000 + (base - 500000000) * 0.42;
-      return 384060000 + (base - 1000000000) * 0.45;
-    }
-
-    function runCalculation() {
-      const hireStr = document.getElementById('hire-date').value;
-      const retireStr = document.getElementById('retire-date').value;
-      const sevAmount = cleanNum(document.getElementById('severance-amount').value);
-      const irpYears = parseInt(document.getElementById('irp-years').value, 10) || 15;
-
-      const d1 = new Date(hireStr);
-      const d2 = new Date(retireStr);
-      let years = Math.max(1, Math.ceil((d2 - d1) / (1000 * 60 * 60 * 24 * 365.25)));
-
-      const serviceDeduct = calcServiceDeduction(years);
-      const afterService = Math.max(0, sevAmount - serviceDeduct);
-      const annualizedSalary = Math.round((afterService / years) * 12);
-      const salaryDeduct = Math.round(calcSalaryDeduction(annualizedSalary));
-      const taxBase = Math.max(0, annualizedSalary - salaryDeduct);
-
-      const annualizedTax = calcBasicTax(taxBase);
-      const nationalTax = Math.round((annualizedTax / 12) * years);
-      const localTax = Math.round(nationalTax * 0.10);
-      const totalTax = nationalTax + localTax;
-
-      const netCash = Math.max(0, sevAmount - totalTax);
-      const effTaxRate = sevAmount > 0 ? ((totalTax / sevAmount) * 100).toFixed(2) : 0;
-
-      // IRP Reduction (1~10yr: 30%, 11yr+: 40%)
-      let irpDiscountedTax = 0;
-      if (irpYears <= 10) {
-        irpDiscountedTax = totalTax * 0.70;
-      } else {
-        const p1 = (10 / irpYears) * (totalTax * 0.70);
-        const p2 = ((irpYears - 10) / irpYears) * (totalTax * 0.60);
-        irpDiscountedTax = p1 + p2;
-      }
-
-      const irpSave = totalTax - irpDiscountedTax;
-      const irpTotal = sevAmount - irpDiscountedTax;
-
-      // DOM Updates
-      document.getElementById('years-text').textContent = `${years}년 (근속공제 ${formatNum(serviceDeduct)}원)`;
-      document.getElementById('annualized-salary-text').textContent = `${formatNum(annualizedSalary)}원`;
-      document.getElementById('salary-deduct-text').textContent = `${formatNum(salaryDeduct)}원`;
-      document.getElementById('tax-base-text').textContent = `${formatNum(taxBase)}원`;
-      document.getElementById('total-tax-text').textContent = `${formatNum(totalTax)}원`;
-
-      document.getElementById('net-cash-display').textContent = `${formatNum(netCash)}원`;
-      document.getElementById('tax-subtext').textContent = `총 세금 ${formatNum(totalTax)}원 원천징수 (실효세율 ${effTaxRate}%)`;
-
-      document.getElementById('irp-save-text').textContent = `총 ${formatNum(irpSave)}원 세금 감면`;
-      document.getElementById('irp-total-text').textContent = `${formatNum(irpTotal)}원`;
-
-      try {
-        localStorage.setItem('severance_calc_last', JSON.stringify({ sevAmount, netCash, irpSave }));
-      } catch (e) {}
-    }
-
-    document.getElementById('calc-btn').addEventListener('click', runCalculation);
-    document.getElementById('reset-btn').addEventListener('click', function() {
-      document.getElementById('hire-date').value = '2011-03-01';
-      document.getElementById('retire-date').value = '2026-02-28';
-      document.getElementById('severance-amount').value = '150,000,000';
-      document.getElementById('irp-years').value = '15';
-      runCalculation();
-    });
-
-    function showToast(msg) {
-      const toast = document.getElementById('toast');
-      toast.textContent = msg;
-      toast.style.opacity = '1';
-      setTimeout(() => { toast.style.opacity = '0'; }, 2200);
-    }
-
-    document.getElementById('copy-btn').addEventListener('click', function() {
-      const cash = document.getElementById('net-cash-display').textContent;
-      const tax = document.getElementById('total-tax-text').textContent;
-      const save = document.getElementById('irp-save-text').textContent;
-      const total = document.getElementById('irp-total-text').textContent;
-      const url = window.location.href;
-
-      const summary = `[2026 퇴직소득세 및 IRP 절세 분석]\n- 일시금 실수령액: ${cash}\n- 원천징수 총 세액: ${tax}\n- IRP 분할 수령 시 절세액: ${save}\n- IRP 최종 총 수령액: ${total}\n👉 바로가기: ${url}`;
-
-      if (navigator.clipboard && window.isSecureContext) {
-        navigator.clipboard.writeText(summary).then(() => showToast('결과가 클립보드에 복사되었습니다.')).catch(() => fallbackCopy(summary));
-      } else {
-        fallbackCopy(summary);
-      }
-    });
-
-    function fallbackCopy(text) {
-      const ta = document.createElement('textarea');
-      ta.value = text;
-      ta.style.position = 'fixed';
-      ta.style.opacity = '0';
-      document.body.appendChild(ta);
-      ta.select();
-      try {
-        document.execCommand('copy');
-        showToast('결과가 클립보드에 복사되었습니다.');
-      } catch (err) { alert('복사 실패'); }
-      document.body.removeChild(ta);
-    }
-
-    window.addEventListener('DOMContentLoaded', runCalculation);
-  </script>
+<footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-8 text-center text-xs text-slate-500 dark:text-slate-400 mt-12">
+<div class="max-w-4xl mx-auto px-4 space-y-3">
+<div class="flex justify-center gap-4 text-xs font-medium">
+<a class="hover:underline" href="./index.html">메인 도구</a>
+<span>•</span>
+<a class="hover:underline" href="./guides/guide.html">전문 가이드북</a>
+<span>•</span>
+<a class="hover:underline" href="./privacy.html">개인정보처리방침</a>
+<span>•</span>
+<a class="hover:underline" href="./terms.html">이용약관</a>
+</div>
+<p>© 2026 enjoy-onepage.com. All rights reserved.</p>
+</div>
+</footer>
 </body>
 </html>
