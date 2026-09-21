@@ -470,10 +470,10 @@
     }
 
     function runCalculation() {
-      const hireStr = document.getElementById('hire-date').value;
-      const retireStr = document.getElementById('retire-date').value;
-      const sevAmount = cleanNum(document.getElementById('severance-amount').value);
-      const irpYears = parseInt(document.getElementById('irp-years').value, 10) || 15;
+      const hireStr = document.getElementById('hire-date')?.value;
+      const retireStr = document.getElementById('retire-date')?.value;
+      const sevAmount = cleanNum(document.getElementById('severance-amount')?.value);
+      const irpYears = parseInt(document.getElementById('irp-years')?.value, 10) || 15;
 
       const d1 = new Date(hireStr);
       const d2 = new Date(retireStr);
@@ -526,10 +526,10 @@
 
     document.getElementById('calc-btn').addEventListener('click', runCalculation);
     document.getElementById('reset-btn').addEventListener('click', function() {
-      document.getElementById('hire-date').value = '2011-03-01';
-      document.getElementById('retire-date').value = '2026-02-28';
-      document.getElementById('severance-amount').value = '150,000,000';
-      document.getElementById('irp-years').value = '15';
+      { const _el = document.getElementById('hire-date'); if (_el) _el.value = '2011-03-01'; }
+      { const _el = document.getElementById('retire-date'); if (_el) _el.value = '2026-02-28'; }
+      { const _el = document.getElementById('severance-amount'); if (_el) _el.value = '150,000,000'; }
+      { const _el = document.getElementById('irp-years'); if (_el) _el.value = '15'; }
       runCalculation();
     });
 
