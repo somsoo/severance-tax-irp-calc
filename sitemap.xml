@@ -2,19 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://severance-tax-irp-calc.enjoy-onepage.com/</loc>
-    <lastmod>2026-02-22</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://severance-tax-irp-calc.enjoy-onepage.com/sev-3000-5y.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://severance-tax-irp-calc.enjoy-onepage.com/sev-5000-10y.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://severance-tax-irp-calc.enjoy-onepage.com/sev-100m-10y.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://severance-tax-irp-calc.enjoy-onepage.com/sev-100m-20y.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://severance-tax-irp-calc.enjoy-onepage.com/sev-200m-20y.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://severance-tax-irp-calc.enjoy-onepage.com/sev-300m-25y.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://severance-tax-irp-calc.enjoy-onepage.com/guide-irp-30vs40.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://severance-tax-irp-calc.enjoy-onepage.com/guide-service-deduction.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://severance-tax-irp-calc.enjoy-onepage.com/guide-1day-rule.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://severance-tax-irp-calc.enjoy-onepage.com/guide-lump-sum-vs-irp.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://severance-tax-irp-calc.enjoy-onepage.com/privacy.html</loc>
-    <lastmod>2026-02-22</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://severance-tax-irp-calc.enjoy-onepage.com/terms.html</loc>
-    <lastmod>2026-02-22</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
