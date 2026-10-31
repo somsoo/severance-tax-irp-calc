@@ -1,0 +1,28 @@
+{
+ "app": "severance-tax-irp-calc",
+ "host": "severance-tax-irp-calc.enjoy-onepage.com",
+ "watch": false,
+ "status": "unverified",
+ "checked": "",
+ "soft_days": 60,
+ "hard_days": 120,
+ "grace_days": 31,
+ "hide": [],
+ "pages": [
+  "guide-1day-rule.html",
+  "guide-irp-30vs40.html",
+  "guide-lump-sum-vs-irp.html",
+  "guide-service-deduction.html",
+  "index.html",
+  "sev-100m-10y.html",
+  "sev-100m-20y.html",
+  "sev-200m-20y.html",
+  "sev-3000-5y.html",
+  "sev-300m-25y.html",
+  "sev-5000-10y.html"
+ ],
+ "values": {},
+ "sources": {},
+ "valid_until": "2026-12-31",
+ "note": "이 페이지의 금액·비율은 2026년 기준"
+}
